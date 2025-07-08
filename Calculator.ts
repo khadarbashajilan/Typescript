@@ -3,6 +3,10 @@ let a:any;
 a=12121;
 console.log(typeof a); //-> number
 
+let c:boolean;
+c=true
+console.log(typeof c)// -> boolean
+
 let b:any;
 console.log(typeof b); //-> undefined
 b=3043;
