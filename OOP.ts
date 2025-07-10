@@ -33,5 +33,25 @@
 }
 
 {
-    
+    // static
+    class Math{
+        static pi:number=3.145;
+
+        static CalcArea(r:number):number{
+            return Math.pi*r*r;
+        }
+
+    }
+
+    class Bio extends Math{
+        display():number{
+            return Math.pi;
+        }
+    }
+
+    // const m1 = new Math; -> not needed to acess pi (coz, its a static)
+    console.log(Math.pi); //-> 3.14
+    console.log(Math.CalcArea(4)) //->50.13
+    const b1 = new Bio();
+    console.log(b1.display()); //->3.145
 }
