@@ -34,28 +34,28 @@ class Todo{
 
 // Beginner approach
 {
-let ListT:string[]=[];
-let IdxT:number=0;
-function addtasks(a:string):void{
-    ListT[IdxT++]=a;
-}
-function showtasks(arr:string[]):void{
-    for(let ele of arr){
-        console.log(ele);
-    }
-}
-function removetasks(a:string):void{
-    const IDX:number = ListT.indexOf(a);
-    if(IDX==-1){
-        console.log("Not Exists");
-        return;
-    }
-    ListT.splice(IDX,1);
-    }
-addtasks("Eat");
-addtasks("Code");
-addtasks("Sleep");
-showtasks(ListT);
-removetasks("Sleep");
-showtasks(ListT);
+// let ListT:string[]=[];
+// let IdxT:number=0;
+// function addtasks(a:string):void{
+//     ListT[IdxT++]=a;
+// }
+// function showtasks(arr:string[]):void{
+//     for(let ele of arr){
+//         console.log(ele);
+//     }
+// }
+// function removetasks(a:string):void{
+//     const IDX:number = ListT.indexOf(a);
+//     if(IDX==-1){
+//         console.log("Not Exists");
+//         return;
+//     }
+//     ListT.splice(IDX,1);
+//     }
+// addtasks("Eat");
+// addtasks("Code");
+// addtasks("Sleep");
+// showtasks(ListT);
+// removetasks("Sleep");
+// showtasks(ListT);
 }

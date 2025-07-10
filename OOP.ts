@@ -55,3 +55,32 @@
     const b1 = new Bio();
     console.log(b1.display()); //->3.145
 }
+
+{
+    // abstract and super
+    abstract class shape{
+        //The shape class is declared as abstract, which means it can't be instantiated directly.
+
+        abstract calcArea():number;
+
+        displayArea():void{
+            console.log(`Area: ${this.calcArea()}`);
+        }
+    }
+    class Rect extends shape{
+        constructor(private h:number, private w:number){
+            super(); // ->must needed when a class is deriving from a class. It will get the parents methods/ ?? why
+                    // lets understand clearly, Why super() is needed : 
+                    //Initializes the parent class's properties and methods
+                    //Sets up the correct prototype chain for inheritance
+                    //Even if the parent constructor is empty, it's required by JavaScript's class inheritance mechanism
+        }
+
+        calcArea(): number {
+            return this.h*this.w;
+        }
+    }
+    const r1 = new Rect(2,2);
+    console.log(r1.calcArea());
+
+}
